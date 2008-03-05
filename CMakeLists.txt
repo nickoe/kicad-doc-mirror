@@ -13,7 +13,6 @@ PROJECT(kicad)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.4.6 FATAL_ERROR)
 
-SET(CMAKE_INSTALL_PREFIX /usr/local CACHE PATH "")
 # Locations for install targets.
 IF(UNIX)
     IF(APPLE)
@@ -37,4 +36,3 @@ ENDIF(WIN32)
 # CMake will look in these dirs for nested 'CMakeLists.txt' files.
 # Resources.
 ADD_SUBDIRECTORY(doc)
-
