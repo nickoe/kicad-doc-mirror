@@ -9,30 +9,30 @@
 #
 # Our project is called 'kicad'. This is what it will be called in
 # our makefiles.
-PROJECT(kicad)
+project(kicad)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.4.6 FATAL_ERROR)
+cmake_minimum_required(VERSION 2.4.6 FATAL_ERROR)
 
 # Locations for install targets.
-IF(UNIX)
-    IF(APPLE)
-    ELSE(APPLE)
+if(UNIX)
+    if(APPLE)
+    else(APPLE)
         # Like all variables, CMAKE_INSTALL_PREFIX can be over-ridden on the command line.
-        SET(CMAKE_INSTALL_PREFIX /usr/local CACHE PATH "")
+        set(CMAKE_INSTALL_PREFIX /usr/local CACHE PATH "")
         # When used later, "bin" and others with no leading / is relative to CMAKE_INSTALL_PREFIX.
-        SET(KICAD_DOCS share/doc/kicad CACHE PATH "Location of KiCad documentation files.")
-        SET(KICAD_HELP share/doc/kicad/help CACHE PATH "Location of KiCad help files.")
-    ENDIF(APPLE)
-ENDIF(UNIX)
+        set(KICAD_DOCS share/doc/kicad CACHE PATH "Location of KiCad documentation files.")
+        set(KICAD_HELP share/doc/kicad/help CACHE PATH "Location of KiCad help files.")
+    endif(APPLE)
+endif(UNIX)
 
-IF(WIN32)
+if(WIN32)
     # Like all variables, CMAKE_INSTALL_PREFIX can be over-ridden on the command line.
-    SET(CMAKE_INSTALL_PREFIX c:/kicad CACHE PATH "")
+    set(CMAKE_INSTALL_PREFIX c:/kicad CACHE PATH "")
     # When used later, "winexe" and others with no leading / is relative to CMAKE_INSTALL_PREFIX.
-    SET(KICAD_DOCS doc)
-    SET(KICAD_HELP ${KICAD_DOCS}/help)
-ENDIF(WIN32)
+    set(KICAD_DOCS doc)
+    set(KICAD_HELP ${KICAD_DOCS}/help)
+endif(WIN32)
 
 # CMake will look in these dirs for nested 'CMakeLists.txt' files.
 # Resources.
-ADD_SUBDIRECTORY(doc)
+add_subdirectory(doc)
