@@ -21,7 +21,7 @@ if(UNIX)
         set(CMAKE_INSTALL_PREFIX /usr/local CACHE PATH "")
         # When used later, "bin" and others with no leading / is relative to CMAKE_INSTALL_PREFIX.
         set(KICAD_DOCS share/doc/kicad CACHE PATH "Location of KiCad documentation files.")
-        set(KICAD_HELP share/doc/kicad/help CACHE PATH "Location of KiCad help files.")
+        set(KICAD_HELP ${KICAD_DOCS}/help CACHE PATH "Location of KiCad help files.")
     endif(APPLE)
 endif(UNIX)
 
