@@ -34,4 +34,3 @@ install(DIRECTORY ru DESTINATION ${KICAD_DOCS}
     PATTERN "*.odt" EXCLUDE
     PATTERN "*.sxw" EXCLUDE)
 
-add_subdirectory(help)
