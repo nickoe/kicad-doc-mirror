@@ -37,3 +37,7 @@ install(DIRECTORY ru DESTINATION ${KICAD_HELP}
     COMPONENT file_formats
     PATTERN ".svn" EXCLUDE
     PATTERN "docs_src" EXCLUDE)
+
+install(DIRECTORY ru DESTINATION ${KICAD_HELP}
+    COMPONENT footprints_doc
+    PATTERN ".svn" EXCLUDE
