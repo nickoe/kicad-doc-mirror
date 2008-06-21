@@ -27,4 +27,4 @@ mark_as_advanced(KICAD_DOCS KICAD_HELP)
 # CMake will look in these dirs for nested 'CMakeLists.txt' files.
 # Resources.
 add_subdirectory(doc/tutorials)
-add_subdirectory(help)
+add_subdirectory(doc/help)

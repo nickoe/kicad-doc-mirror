@@ -40,4 +40,4 @@ install(DIRECTORY file_formats DESTINATION ${KICAD_HELP}
 
 install(DIRECTORY footprints_doc DESTINATION ${KICAD_HELP}
     COMPONENT footprints_doc
-    PATTERN ".svn" EXCLUDE
+    PATTERN ".svn" EXCLUDE)
