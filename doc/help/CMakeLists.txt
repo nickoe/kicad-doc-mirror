@@ -28,6 +28,12 @@ install(DIRECTORY fr
 #         PATTERN ".svn" EXCLUDE
 #         PATTERN "docs_src" EXCLUDE)
 
+install(DIRECTORY ja
+        DESTINATION ${KICAD_HELP}
+        COMPONENT help-ja
+        PATTERN ".svn" EXCLUDE
+        PATTERN "docs_src" EXCLUDE)
+
 install(DIRECTORY pt
         DESTINATION ${KICAD_HELP}
         COMPONENT help-pt

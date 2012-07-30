@@ -1,7 +1,7 @@
 # Install help files & docs
 include ../libs.linux
 
-TARGETS=de en es fr it pt ru
+TARGETS=de en es fr it ja pt ru
 
 install: $(TARGETS)
 
